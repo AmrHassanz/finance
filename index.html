@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Calculator Widget</title>
+    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- home -->
+    <header id="calculator">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="inputs fw-bold">
+                        <h1 class="text-center h3 text-warning">Calculate Your Reward</h1>
+                        <div class="d-flex align-items-center mb-3">
+                            <label class="w-25" for="">Vendors/Bills</label>
+                            <input class="form-control w-75" placeholder="Enter a Number" type="number">
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <label class="w-25" for="">Media/Ad Spend</label>
+                            <input class="form-control w-75" placeholder="Enter a Number" type="number">
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <label class="w-25" for="">Crop.Spend</label>
+                            <input class="form-control w-75" placeholder="Enter a Number" type="number">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <label class="w-25" for="">Team Project</label>
+                            <input class="form-control w-75" placeholder="Enter a Number" type="number">
+                        </div>
+                    </div>
+                    <div class="compare fw-bold my-4">
+                        <h2 class="text-center h3 text-warning">Compare Your Reward</h2>
+                        <div class="d-flex justify-content-between">
+                            <button type="button"
+                                class="btn btn-outline-danger w-25">Brex</button>
+                            <button type="button"
+                                class="btn btn-outline-danger w-25">Stripe</button>
+                            <button type="button"
+                                class="btn btn-outline-danger w-25">Amex</button>
+                        </div>
+                    </div>
+                    <div class="total fw-bold">
+                        <h3 class="text-center h3 text-warning">Total</h3>
+                        <div class="d-flex justify-content-between">
+                            <h5 class="text-white">Unlimited Rewards</h5>
+                            <span class="text-danger" id="unlimitedRewards">0 $</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <h5 class="text-white">lifetime Rewards</h5>
+                            <span class="text-danger" id="lifetimeRewards">0 $</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
