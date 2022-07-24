@@ -27,7 +27,7 @@ body {
 }
 
 .inputs ,.compare ,.total{
-  background-color: rgba(65, 64, 65, .6);
+  background-color: rgba(65, 64, 65, .8);
   padding: .5rem 1rem;
   border-radius: .5rem;
   color: white;
