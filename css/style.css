@@ -4,23 +4,42 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-@media screen and (min-width: 992px) {}
-
-@media screen and (min-width: 768px) and (max-width: 991px) {}
-
-@media screen and (max-width: 767px) {}
+@media screen and (max-width: 576px) {
+  button{width: auto;}
+  .group{flex-direction: column;}
+  input{width: 100%;}
+}
+@media screen and (min-width: 577px) {
+  button{width: 25%;}
+  .group{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  input{width: 70% !important;}
+}
 
 #calculator {
   background-image: url(../images//h1.jpg);
   background-position: center center;
   background-size: cover;
   height: 100vh;
-  padding: 3rem;
+  padding: 1rem 0;
 }
 
 .inputs ,.compare ,.total{
-  background-color: rgba(65, 64, 65, .8);
-  padding: 1rem;
+  background-color: rgba(65, 64, 65, .6);
+  padding: .5rem 1rem;
   border-radius: .5rem;
   color: white;
+  position: relative;
+  transition: all .5s ease-in-out;
+}
+.inputs:hover ,.compare:hover ,.total:hover{
+  background-color: rgba(65, 64, 65, 1);
+  box-shadow: rgba(255, 255, 255,.2) 0px 1px 0px, rgba(255, 255, 255,.2) 0px 0px 8px;
+}
+
+.alert{
+  opacity: 0;
+  transition: all .5s ease-in-out;
 }
